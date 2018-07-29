@@ -13,7 +13,7 @@ public class Largest_Smallest_Number {
 
 	public static void main(String[] args) {
 
-		int n, largest, smallest;
+		int n;
 		int intArray[];
 
 		// Taking inputs
@@ -27,21 +27,32 @@ public class Largest_Smallest_Number {
 			}
 		}
 
-		largest = intArray[0];
-		smallest = intArray[0];
+		System.out.println("largest number in array = " + largestNumber(intArray));
+		System.out.println("smallest number in array = " + smallestNumber(intArray));
+
+	}
+
+	private static int largestNumber(int intArray[]) {
+		int largest = intArray[0];
 
 		for (int i = 0; i < intArray.length; i++) {
 			if (intArray[i] > largest) {
 				largest = intArray[i];
 			}
+		}
+		return largest;
+	}
+
+	private static int smallestNumber(int intArray[]) {
+		
+		int smallest = intArray[0];
+
+		for (int i = 0; i < intArray.length; i++) {
 			if (intArray[i] < smallest) {
 				smallest = intArray[i];
 			}
 		}
-
-		System.out.println("largest number in array = " + largest);
-		System.out.println("smallest number in array = " + smallest);
-
+		return smallest;
 	}
 
 }
