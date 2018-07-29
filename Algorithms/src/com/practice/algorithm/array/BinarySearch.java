@@ -11,8 +11,10 @@ import java.util.Scanner;
  * 
  *
  *         1.check the middle element of the array if it matches the value then
- *         return true 2.if the value is more than middle element than search in
- *         the right half of array 3.if the value is less than middle element
+ *         return true 
+ *         2.if the value is more than middle element than search in
+ *         the right half of array 
+ *         3.if the value is less than middle element
  *         than search in the left half of array
  *
  *

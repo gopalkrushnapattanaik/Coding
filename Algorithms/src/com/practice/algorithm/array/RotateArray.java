@@ -7,8 +7,9 @@ import java.util.Scanner;
  * 
  *         logically divide the array to 2 parts at the index of rotation factor
  * 
- *         1. reverse first logical half 2. reverse second logical half 3.
- *         reverse the whole array
+ *         1. reverse first logical half 
+ *         2. reverse second logical half
+ *         3.reverse the whole array
  *
  */
 public class RotateArray {
