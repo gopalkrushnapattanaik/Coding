@@ -19,11 +19,12 @@ public class Producer implements Runnable {
 	public void run() {
 		while (true) {
 			try {
-				produce(counter.incrementAndGet());
+				produce(counter.get());
 			} catch (InterruptedException e) {
 
 				e.printStackTrace();
 			}
+			counter.incrementAndGet();
 		}
 
 	}
