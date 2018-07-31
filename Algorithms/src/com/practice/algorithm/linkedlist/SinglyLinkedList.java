@@ -98,7 +98,7 @@ public class SinglyLinkedList {
 		Node ptr = start;
 		pos = pos - 1;
 		
-		for (int i = 0; i < size; i++) {
+		for (int i = 1; i < size; i++) {
 			if (i == pos) {
 				Node temp = ptr.getNext();
 				temp = temp.getNext();
