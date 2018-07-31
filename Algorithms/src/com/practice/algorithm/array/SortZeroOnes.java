@@ -1,6 +1,5 @@
 package com.practice.algorithm.array;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class SortZeroOnes {
@@ -27,15 +26,6 @@ public class SortZeroOnes {
 
 		arr = sortZeroOnes(arr);
 		printArray(arr);
-
-	}
-
-	private static void printArray(int[] arr) {
-		System.out.println("Array Elements : {");
-		for (int i = 0; i < arr.length; i++) {
-			System.out.println("'" + arr[i] + "'");
-		}
-		System.out.println("}");
 
 	}
 
@@ -70,7 +60,12 @@ public class SortZeroOnes {
 		
 		
 		
-
+	static void printArray(int arr[])
+    {
+        for (int i = 0; i < arr.length; i++)
+            System.out.print(arr[i]+" ");
+        System.out.println("");
+    }
 
 
 }

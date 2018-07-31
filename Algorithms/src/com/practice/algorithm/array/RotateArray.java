@@ -35,6 +35,9 @@ public class RotateArray {
 			System.out.print("Enter rotation factor:");
 			rotationFactor = s.nextInt();
 		}
+		
+		System.out.println("Array Before rotation....");
+		printArray(arr);
 
 		// 1. reverse first logical half
 		reverseArray(arr, 0, rotationFactor - 1);
@@ -45,9 +48,8 @@ public class RotateArray {
 		// 3. reverse the whole array
 		reverseArray(arr, 0, arr.length - 1);
 
-		for (int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i]);
-		}
+		System.out.println("Array After rotation by rotationFactor " + rotationFactor +"....");
+		printArray(arr);
 	}
 
 	// reverse the sub array from index start to index end.
@@ -58,5 +60,12 @@ public class RotateArray {
 			arr[j] = temp;
 		}
 	}
+	
+	 static void printArray(int arr[])
+	    {
+	        for (int i = 0; i < arr.length; i++)
+	            System.out.print(arr[i]+" ");
+	        System.out.println("");
+	    }
 
 }
