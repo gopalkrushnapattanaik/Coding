@@ -1,5 +1,6 @@
 package com.practice.algorithm.fibbonaci;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 import java.util.WeakHashMap;
 
@@ -15,17 +16,17 @@ import java.util.WeakHashMap;
  */
 public class FibbonaciMemoization {
 
-	public static WeakHashMap<Integer, Integer> cache = new WeakHashMap<Integer, Integer>();
+	public static WeakHashMap<Integer, BigInteger> cache = new WeakHashMap<Integer,BigInteger>();
 
-	public static int fibbonaciCalculator(int n) {
+	public static BigInteger fibbonaciCalculator(int n) {
 		if (n == 0) {
-			return 0;
+			return BigInteger.ZERO;
 		} else if (n == 1) {
-			return 1;
+			return BigInteger.ONE;
 		} else if (cache.containsKey(n)) {
 			return cache.get(n);
 		} else {
-			int sum = fibbonaciCalculator(n - 1) + fibbonaciCalculator(n - 2);
+			BigInteger sum = fibbonaciCalculator(n - 1).add(fibbonaciCalculator(n - 2));
 			cache.put(n, sum);
 			return sum;
 		}
