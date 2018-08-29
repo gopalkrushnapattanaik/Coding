@@ -1,6 +1,5 @@
 package com.practice.algorithm.fibbonaci;
 
-import java.math.BigInteger;
 import java.util.Scanner;
 import java.util.WeakHashMap;
 
