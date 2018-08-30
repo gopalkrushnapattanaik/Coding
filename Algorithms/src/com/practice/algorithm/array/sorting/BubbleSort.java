@@ -34,14 +34,32 @@ public class BubbleSort {
 		}
 	}
 
+	/**
+	 * @param inputArray
+	 * @return
+	 * 
+	 * 		   There are 2 loops. The loop with the counter outer represents the
+	 *         passes and continues for 0 to length – 1 times. ie. 1 less than the
+	 *         number of items times.
+	 * 
+	 *         The loop with the counter inner represents the sorted element being
+	 *         moved/bubbled forward. It continues from 0 to length-outer-1 times.
+	 * 
+	 *         This is because the size of the unsorted part of the array keeps
+	 *         reducing in exact correlation with the number of passes completed i.e
+	 *         number of elements sorted and put in their correct place.
+	 *         
+	 *         Space Complexity= Constant Space O(1)
+	 *         Time Complexity= 2 loops -> O(N^2)
+	 */
 	private static int[] performBubbleSort(int[] inputArray) {
 
-		for (int i = 0; i < inputArray.length; i++) {
-			for (int j = 0; j < inputArray.length - i - 1; j++) {
-				if (inputArray[j] > inputArray[j + 1]) {
-					int temp = inputArray[j];
-					inputArray[j] = inputArray[j + 1];
-					inputArray[j + 1] = temp;
+		for (int outer = 0; outer < inputArray.length; outer++) {
+			for (int inner = 0; inner < inputArray.length - outer - 1; inner++) {
+				if (inputArray[inner] > inputArray[inner + 1]) {
+					int temp = inputArray[inner];
+					inputArray[inner] = inputArray[inner + 1];
+					inputArray[inner + 1] = temp;
 				}
 			}
 		}
