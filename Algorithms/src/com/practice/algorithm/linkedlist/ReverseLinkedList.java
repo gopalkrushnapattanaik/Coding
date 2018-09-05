@@ -58,7 +58,7 @@ public class ReverseLinkedList {
 
 	public static void printSinglyLinkedList(SinglyLinkedListNode node) throws IOException {
 		while (node != null) {
-			System.out.print(String.valueOf(node.data) + " ");
+			System.out.print(String.valueOf(node.data) + " ->");
 			node = node.next;
 		}
 		System.out.println("");
