@@ -3,8 +3,9 @@
 ``` This Repository has created for practice and learning purpose of java ... through Data structures using Java , GoF design patterns and some advanced Java concepts from Java8 and Java9```
 
 
-KAFKA SETUP FOR RUNNING THE DEMO
+```KAFKA SETUP FOR RUNNING THE DEMO```
 
+```
 1.Download Kafka
 2.tar -xzf kafka_2.11-1.1.0.tgz
 3.cd kafka_2.11-1.1.0
@@ -18,4 +19,6 @@ KAFKA SETUP FOR RUNNING THE DEMO
   bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
 8.Create Consumer to consume message from above topic
   bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+  
+  ```
   
