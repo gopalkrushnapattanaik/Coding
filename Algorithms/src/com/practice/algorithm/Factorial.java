@@ -1,3 +1,5 @@
+package com.practice.algorithm;
+
 
 public class Factorial {
 

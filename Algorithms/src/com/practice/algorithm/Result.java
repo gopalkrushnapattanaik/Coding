@@ -1,3 +1,5 @@
+package com.practice.algorithm;
+
 import java.util.HashSet;
 
 public class Result {
