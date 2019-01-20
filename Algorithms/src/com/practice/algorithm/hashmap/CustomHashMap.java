@@ -109,14 +109,14 @@ public class CustomHashMap<K, V> {
 		}
 	}
 
-	public void remove(Object key) {
+	public boolean remove(Object key) {
 
 		int keyHash = hash(key);
 		Node<K, V> node = (Node<K, V>) entryTable[keyHash];
 
 		if (node == null) {
 			System.out.println("key not there to remove");
-			return;
+			return false;
 		} else {
 
 			Node<K, V> previous = null;
@@ -124,21 +124,23 @@ public class CustomHashMap<K, V> {
 
 			while (current != null) {
 				if (current.getKey().equals(key)) {
-					if (previous == null) {
+					if (previous == null) { // It is the first node that need to be deleted
 						current = current.next;
-						return;
-					} else {
+						return true;
+					} else { // remove the node
 						previous.next = current.next;
-						return;
+						return true;
 					}
 				}
 
 				previous = current;
 				current = current.next;
 			}
+			// reached here means the linked list don't have the corresponding key,value
+			// pair
 			System.out.println("key not there to remove");
 		}
-
+		return false;
 	}
 
 }
