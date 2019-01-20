@@ -15,6 +15,13 @@ public class CustomHashMapTest {
 		System.out.println("map.get(11)"+ map.get(11));
 		System.out.println("map.get(23)"+ map.get(23));
 		System.out.println("map.get(32)"+ map.get(32));
+		
+		map.remove(32);
+		
+		System.out.println("map.get(12)"+ map.get(12));
+		System.out.println("map.get(11)"+ map.get(11));
+		System.out.println("map.get(23)"+ map.get(23));
+		System.out.println("map.get(32)"+ map.get(32));
 	}
 
 }

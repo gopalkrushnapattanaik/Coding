@@ -10,9 +10,9 @@ package com.practice.algorithm.hashmap;
  * 
  *            This is implemented using a Array of Entries called EntryTable
  * 
- *            and a Linked List to preserve the hash collisons as a linked list.
+ *            and a Linked List to preserve the hash Collision as a linked list.
  * 
- *            Put(key,value) -> checks if hash(key) is present,if not presnt
+ *            Put(key,value) -> checks if hash(key) is present,if not present
  *            just creates a new node and assigns in to array, if present checks
  *            equals on key and updates value else create a new node and append
  *            to list
@@ -21,8 +21,12 @@ package com.practice.algorithm.hashmap;
  *            get(key) -> checks if Entry[hash(key)] ,if present then it will
  *            check equals on the key and returns the value.
  * 
- *            if No Collison Happens, then best case time complexity of get and
+ *            if No Collision Happens, then best case time complexity of get and
  *            Put methods if O(1) , worst case O(N)
+ * 
+ *            remove(key) -> remove method will remove the key if its present in
+ *            the map, this will check equals with key and if matches will
+ *            remove else will not remove
  * 
  * 
  * 
@@ -103,6 +107,38 @@ public class CustomHashMap<K, V> {
 			newNode.next = null;
 
 		}
+	}
+
+	public void remove(Object key) {
+
+		int keyHash = hash(key);
+		Node<K, V> node = (Node<K, V>) entryTable[keyHash];
+
+		if (node == null) {
+			System.out.println("key not there to remove");
+			return;
+		} else {
+
+			Node<K, V> previous = null;
+			Node<K, V> current = node;
+
+			while (current != null) {
+				if (current.getKey().equals(key)) {
+					if (previous == null) {
+						current = current.next;
+						return;
+					} else {
+						previous.next = current.next;
+						return;
+					}
+				}
+
+				previous = current;
+				current = current.next;
+			}
+			System.out.println("key not there to remove");
+		}
+
 	}
 
 }
