@@ -193,7 +193,7 @@ public class TrappingRainWater {
 	/**
 	 * @param height
 	 * @return
-	 * 
+	 * 			**Two Pointer Approach***
 	 * 
 	 *         Instead of computing the left and right parts separately, we may
 	 *         think of some way to do it in one iteration. From the dynamic
@@ -232,6 +232,8 @@ public class TrappingRainWater {
 	 *          }
 	 *                        
 	 * 
+	 * 		Time complexity: O(n)
+	 * 		Space complexity: O(1)
 	 * 
 	 */
 	public static int trap(int[] height) {
