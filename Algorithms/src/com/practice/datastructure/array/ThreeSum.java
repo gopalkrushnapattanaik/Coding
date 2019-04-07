@@ -11,8 +11,8 @@ import java.util.Set;
  * @author fq63
  * 
  *         Given an array nums of n integers, are there elements a, b, c in nums
- *         such that a + b + c = 0? Find all unique triplets in the array which
- *         gives the sum of zero.
+ *         such that a + b + c = target? Find all unique triplets in the array
+ *         which gives the sum of target.
  * 
  *         Note:
  * 
@@ -20,7 +20,7 @@ import java.util.Set;
  * 
  *         Example:
  * 
- *         Given array nums = [-1, 0, 1, 2, -1, -4],
+ *         Given array nums = [-1, 0, 1, 2, -1, -4], target=0
  * 
  *         A solution set is: [ [-1, 0, 1], [-1, -1, 2] ]
  */
@@ -31,6 +31,7 @@ public class ThreeSum {
 		int[] arr;
 		// input array length;
 		int n;
+		int target = 0;
 		try (Scanner s = new Scanner(System.in)) {
 			System.out.print("Enter number of elements in the array:");
 			n = s.nextInt();
@@ -40,12 +41,14 @@ public class ThreeSum {
 			for (int i = 0; i < n; i++) {
 				arr[i] = s.nextInt();
 			}
+			System.out.print("Enter sum target:");
+			target = s.nextInt();
 		}
 
-		Set<ArrayList<Integer>> result = threeSum(arr);
+		Set<ArrayList<Integer>> result = threeSum(arr, target);
 		System.out.println("The triplets collections are " + result);
-		
-		Set<ArrayList<Integer>> result1 = threeSumOptimised(arr);
+
+		Set<ArrayList<Integer>> result1 = threeSumOptimised(arr, target);
 		System.out.println("The triplets collections are " + result1);
 
 	}
@@ -54,15 +57,15 @@ public class ThreeSum {
 	 * @param arr
 	 * @return
 	 * 
-	 * TimeCompelxity = O(N3)
+	 *         TimeCompelxity = O(N3)
 	 */
-	private static Set<ArrayList<Integer>> threeSum(int[] arr) {
+	private static Set<ArrayList<Integer>> threeSum(int[] arr, int target) {
 		HashSet<ArrayList<Integer>> triplets = new HashSet<ArrayList<Integer>>();
 
 		for (int i = 0; i < arr.length - 2; i++) {
 			for (int j = i + 1; j < arr.length - 1; j++) {
 				for (int k = j + 1; k < arr.length; k++) {
-					if (arr[i] + arr[j] + arr[k] == 0) {
+					if (arr[i] + arr[j] + arr[k] == target) {
 						ArrayList<Integer> triplet = new ArrayList<Integer>();
 						triplet.add(arr[i]);
 						triplet.add(arr[j]);
@@ -76,44 +79,43 @@ public class ThreeSum {
 
 		return triplets;
 	}
-	
+
 	/**
 	 * @param arr
-	 * @return
-	 * O(N2)
+	 * @return O(N2)
 	 */
-	private static Set<ArrayList<Integer>> threeSumOptimised(int[] arr) {
+	private static Set<ArrayList<Integer>> threeSumOptimised(int[] arr, int target) {
 		HashSet<ArrayList<Integer>> triplets = new HashSet<ArrayList<Integer>>();
-		
-		if(arr.length<3)
+
+		if (arr.length < 3)
 			return triplets;
-		
+
 		for (int i = 0; i < arr.length; i++) {
-			ArrayList<Integer> couplet =twoSum(arr,-arr[i]);
-			if(!couplet.isEmpty()) {
-				ArrayList<Integer> triplet = new ArrayList<Integer>();
-				triplet.addAll(couplet);
-				triplet.add(arr[i]);
-				Collections.sort(triplet);
-				triplets.add(triplet);
+			Set<ArrayList<Integer>> couplets = twoSum(arr, target - arr[i]);
+			if (!couplets.isEmpty()) {
+				for (ArrayList<Integer> couplet : couplets) {
+					ArrayList<Integer> triplet = new ArrayList<Integer>();
+					triplet.addAll(couplet);
+					triplet.add(arr[i]);
+					Collections.sort(triplet);
+					triplets.add(triplet);
+				}
 			}
 		}
-		
-		
+
 		return triplets;
-		
+
 	}
 
 	/**
 	 * @param nums
 	 * @param target
-	 * @return
-	 * O(N)
+	 * @return O(N)
 	 */
-	public static ArrayList<Integer> twoSum(int[] nums, int target) {
+	public static Set<ArrayList<Integer>> twoSum(int[] nums, int target) {
 
 		HashMap<Integer, Integer> map = new HashMap<>();
-		ArrayList<Integer> couplet = new ArrayList<Integer>();
+		Set<ArrayList<Integer>> couplets = new HashSet<ArrayList<Integer>>();
 
 		for (int i = 0; i < nums.length; i++) {
 			map.put(nums[i], i);
@@ -121,13 +123,15 @@ public class ThreeSum {
 
 		for (int i = 0; i < nums.length; i++) {
 			if (map.get(target - nums[i]) != null && map.get(target - nums[i]) != i) {
+				ArrayList<Integer> couplet = new ArrayList<Integer>();
 				couplet.add(nums[i]);
 				couplet.add(nums[map.get(target - nums[i])]);
-				break;
+				Collections.sort(couplet);
+				couplets.add(couplet);
 			}
 		}
 
-		return couplet;
+		return couplets;
 	}
 
 }
