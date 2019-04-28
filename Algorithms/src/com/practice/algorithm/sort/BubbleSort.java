@@ -1,4 +1,4 @@
-package com.practice.datastructure.array;
+package com.practice.algorithm.sort;
 
 import java.util.Scanner;
 
@@ -27,7 +27,7 @@ public class BubbleSort {
 			printArray(inputArray);
 
 			int sortedArray[] = performBubbleSort(inputArray);
-
+			
 			System.out.println("output Array :-");
 			printArray(sortedArray);
 
@@ -66,5 +66,5 @@ public class BubbleSort {
 
 		return inputArray;
 	}
-
+	
 }

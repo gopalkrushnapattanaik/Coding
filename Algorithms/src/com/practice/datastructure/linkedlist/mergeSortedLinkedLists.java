@@ -122,7 +122,6 @@ public class mergeSortedLinkedLists {
 		SinglyLinkedListNode llist3 = mergeLists(llist1.head, llist2.head);
 
 		printSinglyLinkedList(llist3);
-
 		s.close();
 
 	}
@@ -147,5 +146,5 @@ public class mergeSortedLinkedLists {
 
 		return head1;
 	}
-
+	
 }

@@ -1,6 +1,5 @@
 package com.practice.datastructure.linkedlist;
 
-import java.util.HashSet;
 import java.util.Scanner;
 
 import com.practice.datastructure.linkedlist.mergeSortedLinkedLists.SinglyLinkedList;

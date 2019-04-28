@@ -1,4 +1,4 @@
-package com.practice.datastructure.array;
+package com.practice.algorithm.sort;
 
 import java.util.Scanner;
 
