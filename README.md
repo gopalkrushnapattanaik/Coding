@@ -2,6 +2,7 @@
 
 ``` This Repository has created for practice and learning purpose of java ... through Data structures using Java , GoF design patterns and some advanced Java concepts from Java8 and Java9```
 
+https://medium.com/hackernoon/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0
 
 ### https://github.com/careercup/CtCI-6th-Edition/tree/master/Java
 
