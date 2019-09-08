@@ -55,6 +55,8 @@ public class CompletableFutureExample {
 		// Print the results from all futures
 		CompletableFuture.runAsync(() -> System.out.println("results from f1,f2,f3" + futureResults));
 
+	
+		
 		// Start next completable future once anyOf the futures completes
 
 		CompletableFuture<String> future4 = CompletableFuture.supplyAsync(() -> {
@@ -89,6 +91,7 @@ public class CompletableFutureExample {
 
 		CompletableFuture<Object> combinedFuture2 = CompletableFuture.anyOf(future4, future5, future6);
 
+		//the result will have the first completed future
 		System.out.println(combinedFuture2.get());
 
 		// running Asynchronously a task using CompletableFuture.
