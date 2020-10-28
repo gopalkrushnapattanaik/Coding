@@ -18,6 +18,8 @@ https://www.educative.io/courses/grokking-the-object-oriented-design-interview/
 
 https://github.com/careercup/CtCI-6th-Edition/tree/master/Java
 
-https://www.toptal.com/java/hunting-memory-leaks-in-
+https://www.toptal.com/java/hunting-memory-leaks-in-java
+
+https://www.dynatrace.com/news/blog/understanding-g1-garbage-collector-java-9/
 
 https://medium.com/@avinash.singhal/how-i-cracked-job-interviews-for-google-facebook-and-uber-4c180458f571
