@@ -272,6 +272,29 @@ public class TrappingRainWater {
 		return ans;
 	}
 
+	//https://www.youtube.com/watch?v=ZI2z5pq0TqA
+	public int trap_latest(int[] height) {
+		int left =0;
+		int right = height.length-1;
+		int left_max =height[left];
+		int right_max =height[right];
+		int total_water=0;
+		while(left <right){
+			if(left_max < right_max){
+				left++;
+				left_max=Math.max(left_max,height[left]);
+				total_water=total_water+(left_max-height[left]);
+			}else{
+				right--;
+				right_max=Math.max(right_max,height[right]);
+				total_water=total_water+(right_max-height[right]);
+
+			}
+		}
+		return total_water;
+	}
+
+
 	static int min(int x, int y) {
 
 		if (x < y) {
