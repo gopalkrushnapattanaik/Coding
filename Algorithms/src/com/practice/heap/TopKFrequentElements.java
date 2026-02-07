@@ -1,4 +1,4 @@
-package src.com.practice.heap;
+package com.practice.heap;
 
 import java.util.*;
 /*

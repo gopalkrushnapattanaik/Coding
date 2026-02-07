@@ -1,4 +1,4 @@
-package src.com.practice.algorithm.math;
+package com.practice.algorithm.math;
 
 /*
 Given the coordinates of two rectilinear rectangles in a 2D plane, return the total

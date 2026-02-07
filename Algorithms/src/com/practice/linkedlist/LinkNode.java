@@ -1,4 +1,4 @@
-package src.com.practice.linkedlist;
+package com.practice.linkedlist;
 
 public class LinkNode {
     int data ;

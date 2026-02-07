@@ -1,4 +1,4 @@
-package src.com.practice.algorithm.math;
+package com.practice.algorithm.math;
 /*Given an integer x, return true if x is a palindrome, and false otherwise.
 
 

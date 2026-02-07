@@ -1,4 +1,4 @@
-package src.com.practice.datastructure.array;
+package com.practice.datastructure.array;
 /*
 
 The two-pointer technique is a common algorithmic approach used to solve problems
