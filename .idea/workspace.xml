@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="724c539c-45df-4e56-bf94-c8199a203b25" name="Changes" comment="LastStone">
+      <change afterPath="$PROJECT_DIR$/Algorithms/src/com/practice/heap/TopKFrequentElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithms/src/com/practice/tree/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithms/src/com/practice/tree/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/.project" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/bin/com/practice/algorithm/math/ReverseInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/bin/com/practice/algorithm/math/ReverseInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/bin/com/practice/datastructure/array/BubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/bin/com/practice/datastructure/array/MergeSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/bin/com/practice/datastructure/array/ThreeSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/bin/com/practice/datastructure/array/ThreeSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/bin/com/practice/datastructure/linkedlist/RemoveDuplicates.class" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/bin/com/practice/datastructure/linkedlist/RemoveDuplicates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/bin/com/practice/datastructure/linkedlist/mergeSortedLinkedLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/bin/com/practice/datastructure/linkedlist/mergeSortedLinkedLists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/bin/com/practice/datastructure/stack/BalancedParanthesis.class" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/bin/com/practice/datastructure/stack/BalancedParanthesis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/src/com/practice/algorithm/lrucache/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/com/practice/algorithm/lrucache/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/array/MoveZeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/array/MoveZeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/array/StockBuySell.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/array/StockBuySell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/hashmap/CustomHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/hashmap/CustomHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/linkedlist/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/linkedlist/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/linkedlist/RemoveDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/linkedlist/RemoveDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/stack/BalancedParanthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/stack/BalancedParanthesis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/src/com/practice/linkedlist/LinkedListCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/com/practice/linkedlist/LinkedListCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignPattern/.project" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignPattern/bin/com/practice/creational/factory/ShapeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/bin/com/practice/creational/factory/ShapeFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignPattern/bin/com/practice/structural/flyweight/ShapeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/bin/com/practice/structural/flyweight/ShapeFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Future-Example/.project" beforeDir="false" afterPath="$PROJECT_DIR$/Future-Example/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCloning/.project" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCloning/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/bin/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/bin/main/com/restclient/RestClientApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/bin/main/com/restclient/service/Greeting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/bin/main/com/restclient/service/RestServiceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/bin/test/com/restclient/RestClientApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/src/main/java/com/restclient/RestClientApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/src/main/java/com/restclient/service/Greeting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/src/main/java/com/restclient/service/RestServiceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/src/test/java/com/restclient/RestClientApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/bin/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/bin/main/com/tesco/KafkaConsumerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/bin/main/com/tesco/KafkaProducerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/bin/main/com/tesco/SpringKafkaApplication$KafkaMessageProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/bin/main/com/tesco/SpringKafkaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/bin/main/com/tesco/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/bin/test/com/tesco/SpringKafkaApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/src/main/java/com/tesco/KafkaConsumerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/src/main/java/com/tesco/KafkaProducerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/src/main/java/com/tesco/SpringKafkaApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/src/main/java/com/tesco/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Kafka/src/test/java/com/tesco/SpringKafkaApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Try-With-Resources/.project" beforeDir="false" afterPath="$PROJECT_DIR$/Try-With-Resources/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebSocket/.project" beforeDir="false" afterPath="$PROJECT_DIR$/WebSocket/.project" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;gopalkrushnapattanaik&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/gopalkrushnapattanaik/Coding.git&quot;,
+    &quot;accountId&quot;: &quot;4a98090c-922b-42b6-b0a4-90ab56669c93&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2wwRdkKYWFzrdYo41WR4ScgJViK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BalancedParanthesis.executor": "Run",
+    "Application.CustomHashMapTest.executor": "Run",
+    "Application.FactoryTester.executor": "Run",
+    "Application.Fibbonaci.executor": "Run",
+    "Application.FibbonaciMemoization.executor": "Run",
+    "Application.HitCounterTest.executor": "Run",
+    "Application.LinkedListCycle.executor": "Run",
+    "Application.LinkedListKthElementFromEnd.executor": "Run",
+    "Application.LinkedListProblems.executor": "Run",
+    "Application.LinkedListTest.executor": "Run",
+    "Application.MergeStrings.executor": "Run",
+    "Application.MiddleOfLinkedList.executor": "Run",
+    "Application.MoveZeros.executor": "Run",
+    "Application.OverlapRectangle.executor": "Run",
+    "Application.Palindrome.executor": "Run",
+    "Application.RectangleArea.executor": "Run",
+    "Application.RemoveDuplicates.executor": "Run",
+    "Application.RemoveNthNodeFromEnd.executor": "Run",
+    "Application.ReverseLinkedList.executor": "Run",
+    "Application.StockBuySell.executor": "Run",
+    "Application.TestCloning.executor": "Run",
+    "Application.TryWithResourceTester.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Algorithms/src/com/practice/linkedlist" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.StockBuySell">
+    <configuration name="BalancedParanthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.practice.datastructure.stack.BalancedParanthesis" />
+      <module name="Coding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.practice.datastructure.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListCycle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.practice.linkedlist.LinkedListCycle" />
+      <module name="Coding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.practice.linkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListKthElementFromEnd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.practice.linkedlist.LinkedListKthElementFromEnd" />
+      <module name="Coding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.practice.linkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.practice.linkedlist.ReverseLinkedList" />
+      <module name="Coding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.practice.linkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StockBuySell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.practice.datastructure.array.StockBuySell" />
+      <module name="Coding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.practice.datastructure.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StockBuySell" />
+        <item itemvalue="Application.BalancedParanthesis" />
+        <item itemvalue="Application.LinkedListKthElementFromEnd" />
+        <item itemvalue="Application.ReverseLinkedList" />
+        <item itemvalue="Application.LinkedListCycle" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="724c539c-45df-4e56-bf94-c8199a203b25" name="Changes" comment="" />
+      <created>1746950738177</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746950738177</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Two pointer array approach">
+      <option name="closed" value="true" />
+      <created>1748067252499</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748067252499</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge alternate strings">
+      <option name="closed" value="true" />
+      <created>1748449412787</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748449412787</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge alternate strings">
+      <option name="closed" value="true" />
+      <created>1748449455880</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748449455880</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Rectangle Problems">
+      <option name="closed" value="true" />
+      <created>1748704962058</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748704962058</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Palindrome">
+      <option name="closed" value="true" />
+      <created>1748705940820</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748705940820</updated>
+    </task>
+    <task id="LOCAL-00006" summary="New changes">
+      <option name="closed" value="true" />
+      <created>1769283486189</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1769283486189</updated>
+    </task>
+    <task id="LOCAL-00007" summary="https://www.youtube.com/watch?v=ZI2z5pq0TqA">
+      <option name="closed" value="true" />
+      <created>1769451409239</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1769451409239</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Two pointer array approach" />
+    <MESSAGE value="Merge alternate strings" />
+    <MESSAGE value="Rectangle Problems" />
+    <MESSAGE value="Palindrome" />
+    <MESSAGE value="New changes" />
+    <MESSAGE value="https://www.youtube.com/watch?v=ZI2z5pq0TqA" />
+    <option name="LAST_COMMIT_MESSAGE" value="https://www.youtube.com/watch?v=ZI2z5pq0TqA" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/array/MergeStrings.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/array/MergeStrings.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/array/MoveZeros.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/array/MoveZeros.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Algorithms/src/com/practice/datastructure/array/StockBuySell.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
