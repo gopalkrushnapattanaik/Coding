@@ -22,7 +22,7 @@ public class RemoveDuplicates {
 		}
 
 		SinglyLinkedListNode result=removeDuplicates(llist.head);
-
+		System.out.println(result);
 		s.close();
 	}
 

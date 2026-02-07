@@ -16,12 +16,12 @@ class Node {
 		next = n;
 	}
 
-	/* Function to set link to next Node */
+	/* Function to set link to next src.com.practice.linkedlist.Node */
 	public void setNext(Node n) {
 		next = n;
 	}
 
-	/* Function to set data to current Node */
+	/* Function to set data to current src.com.practice.linkedlist.Node */
 	public void setData(int d) {
 		data = d;
 	}
@@ -31,7 +31,7 @@ class Node {
 		return next;
 	}
 
-	/* Function to get data from current Node */
+	/* Function to get data from current src.com.practice.linkedlist.Node */
 	public int getData() {
 		return data;
 	}

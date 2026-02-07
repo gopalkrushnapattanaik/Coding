@@ -123,12 +123,57 @@ public class BalancedParanthesis {
 
 	}
 
+	public static boolean isValid(String s) {
+		Deque<Character> charStack = new ArrayDeque<Character> ();
+		char c;
+		char[] charArray = s.toCharArray();
+
+		for (int i=0;i<charArray.length;i++){
+			switch(charArray[i]){
+				//when encounter a open bracket push to stack
+				case('('):
+				case('{'):
+				case('['):
+					charStack.push(charArray[i]);
+					break;
+				//when encounter a closed bracket pop the top element and compare
+				case(')'):
+					c= charStack.isEmpty() ? ' ' : charStack.pop();
+					if(c != '('){
+						return false;
+					}
+					break;
+				case('}'):
+					c= charStack.isEmpty()? ' ' : charStack.pop();
+					if(c != '{'){
+						return false;
+					}
+					break;
+				case(']'):
+					c= charStack.isEmpty()? ' ' : charStack.pop();
+					if(c != '['){
+						return false;
+					}
+					break;
+
+			}
+
+		}
+		if(charStack.isEmpty()){
+			return true;
+		}else {
+			return false;
+		}
+	}
+
 	public static void main(String[] args) throws IOException {
 		String s = "}][}}(}][))]";
 
 		String result = isBalanced(s);
+		boolean isvalid = isValid(s);
 
 		System.out.println(result);
+		System.out.println(isvalid);
 
 	}
 }

@@ -20,7 +20,7 @@ import java.util.HashMap;
  *         can additionally use a double linked Linked list which will help in
  *         keep the track of the elements accessed from Hash Table.
  * 
- *         We can define a head and tail Node at the beginning, the moment we
+ *         We can define a head and tail src.com.practice.linkedlist.Node at the beginning, the moment we
  *         will insert the element in to HashTable we will add the same value in
  *         the Linked list next to head if during setting the value if the
  *         capacity of the cache reached then remove the node previous to tail.

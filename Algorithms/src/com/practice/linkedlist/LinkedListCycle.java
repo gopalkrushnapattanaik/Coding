@@ -23,14 +23,17 @@ public class LinkedListCycle {
         LinkNode slowPtr = list.head;
         LinkNode fastPtr = list.head;
         boolean isCycle=false;
-        while(fastPtr.next !=null && fastPtr.next.next !=null){
-            fastPtr=fastPtr.next.next;
-            slowPtr=slowPtr.next;
-            if(fastPtr==slowPtr){
-                isCycle=true;
-                break;
+        if(list.head !=null){
+            while(fastPtr.next !=null && fastPtr.next.next !=null){
+                fastPtr=fastPtr.next.next;
+                slowPtr=slowPtr.next;
+                if(fastPtr==slowPtr){
+                    isCycle=true;
+                    break;
+                }
             }
         }
+
         System.out.println("\nisCycle :: "+ isCycle);
     }
 

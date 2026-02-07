@@ -33,23 +33,15 @@ public class MoveZeros {
     public void moveZeroes(int[] nums) {
         //define two pointers to point to both ends of array
         int ptr1=0;
-        int ptr2=1;
-
         for(int i=0;i<nums.length;i++){
-
-            if(nums[ptr1]!=0){
-                ptr2--;
+            if(nums[i]!=0){
+                nums[ptr1++]=nums[i];
                 continue;
             }
+        }
 
-            if(nums[ptr1] ==0) {
-                int temp = nums[ptr1];
-                nums[ptr1] = nums[ptr2];
-                nums[ptr2] = temp;
-            }
-                ptr1++;
-                ptr2--;
-
+        while (ptr1<nums.length){
+            nums[ptr1++]=0;
         }
 
         for (int i = 0; i < nums.length; i++) {

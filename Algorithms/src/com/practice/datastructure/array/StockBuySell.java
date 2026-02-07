@@ -3,7 +3,7 @@ package src.com.practice.datastructure.array;
 public class StockBuySell {
 
     public static void main(String[] args){
-        int [] prices = {7,1,5,3,6,4};
+        int [] prices = {5,1,5,6,7,1,10};
         int min_price =Integer.MAX_VALUE;
         int max_profit=0;
         for(int price:prices){

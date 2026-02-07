@@ -85,7 +85,7 @@ public class CustomHashMap<K, V> {
 			Node<K, V> previous = null;
 			Node<K, V> current = node;
 
-			// linear probing till we get correct Node, if Node found update value and
+			// linear probing till we get correct src.com.practice.linkedlist.Node, if src.com.practice.linkedlist.Node found update value and
 			// return
 			while (current != null) {
 
