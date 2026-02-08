@@ -560,7 +560,20 @@ Advanced Algorithms
 
 ---
 
+---
+
+## 📚 COMPANION DOCUMENTS
+
+This document is part of a comprehensive DSA learning ecosystem:
+
+1. **DSA_COMPLETE_GUIDE.md** - Detailed concepts for each algorithm with full categorization
+2. **DSA_QUICK_REFERENCE.md** - Quick lookup table with file paths and key insights
+3. **DSA_STUDY_NOTES.md** - This file (overview and learning path)
+
+---
+
 **Last Updated:** February 2026
 **Total Problems:** 84+
 **Categories:** 14
 **Difficulty Levels:** Beginner → Advanced
+**Learning Documents:** 3 comprehensive guides
