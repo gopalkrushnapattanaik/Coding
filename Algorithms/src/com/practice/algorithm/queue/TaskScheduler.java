@@ -71,7 +71,21 @@ public class TaskScheduler {
             }
         }
 
-        return Math.max(tasks.length, (maxCount - 1) * (n + 1) + maxCountTasks);
+        // We take the maximum of the total number of tasks and the calculated minimum time to ensure that 
+        // we account for cases where the number of tasks is greater than the calculated minimum time.
+        // The formula (maxCount - 1) * (n + 1) + maxCountTasks accounts for the idle time needed to separate the most 
+        // frequent tasks and the additional tasks that have the same maximum frequency.
+        // If the number of tasks is greater than the calculated minimum time, it means that we can schedule 
+        // all tasks without needing to be idle, so we return the total number of tasks.
+        // If the calculated minimum time is greater than the total number of tasks, it means that we need to be idle for some time
+        //  to separate the most frequent tasks, so we return the calculated minimum time.  
+        // This ensures that we are returning the correct minimum time to complete all tasks, whether it involves idle time or not.
+        // For example, if we have tasks = ["A","A","A","B","B","B"] and n = 2, 
+        // the maximum frequency is 3 (for task A and B), and there are 2 tasks with this maximum frequency.
+        // The calculated minimum time would be (3 - 1) * (2 + 1) + 2 = 8, 
+        // which is the correct minimum time to complete all tasks with the given cooldown period.  
+
+        return Math.max(tasks.length, (maxCount - 1) * (n + 1) + maxCountTasks); 
     }
 
     //Using Priority Queue approach
@@ -85,7 +99,8 @@ public class TaskScheduler {
     b. For i from 0 to n (inclusive), do the following:
         i. If the priority queue is not empty, poll the task with the highest frequency and add it to the temporary list.
         ii. If the polled task's frequency is greater than 1, decrement its frequency and add it back to the priority queue.        
-    c. Increment the time by 1 for each task processed in the current cycle. If there are still tasks in the priority queue after processing, add idle time for the remaining cycles.           
+    c. Increment the time by 1 for each task processed in the current cycle. If there are still tasks in the priority queue 
+      after processing, add idle time for the remaining cycles.           
 4. Return the total time taken to complete all tasks.     
 
     Time Complexity: O(N log K) where N is the number of tasks and K is the number of unique tasks, since we are adding and removing tasks from the priority queue.     
