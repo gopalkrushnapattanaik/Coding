@@ -272,13 +272,43 @@ public class TrappingRainWater {
 		return ans;
 	}
 
-	//https://www.youtube.com/watch?v=ZI2z5pq0TqA
+	//Explanation of two pointer approach:
+	// https://www.youtube.com/watch?v=ZI2z5pq0TqA
 	public int trap_latest(int[] height) {
 		int left =0;
-		int right = height.length-1;
+		int right = height.length-1; 
 		int left_max =height[left];
 		int right_max =height[right];
 		int total_water=0;
+
+		/*
+		
+		We can use two pointers to traverse the array from both ends towards the center.
+		We maintain two variables left_max and right_max to keep track of the
+		maximum height of bars from the left and right ends respectively.
+
+		At each step, we compare the heights at the left and right pointers. 
+		If the height at the left pointer is less than the height at the right pointer, 
+		it means that the water trapped at the left pointer is determined by the left_max. 
+		If the height at the left pointer is greater than or equal to left_max,
+	    we update left_max to the height at the left pointer. 
+		Otherwise, we add the difference between left_max and the height at the left pointer to total_water,
+	    and move the left pointer one step to the right.
+		If the height at the right pointer is less than or equal to right_max,
+	    we update right_max to the height at the right pointer. 
+		Otherwise, we add the difference between right_max and the height at the right pointer to total_water,
+	    and move the right pointer one step to the left.	
+
+		We continue this process until the left pointer is less than the right pointer.	
+
+		This approach works because at any point, the amount of water trapped 
+		is limited by the shorter bar between the left and right pointers.
+		
+		Time complexity: O(n) because we traverse the array at most once.
+		Space complexity: O(1) because we are using only a constant amount of extra space for the pointers and max variables.
+
+		*/
+
 		while(left <right){
 			if(left_max < right_max){
 				left++;

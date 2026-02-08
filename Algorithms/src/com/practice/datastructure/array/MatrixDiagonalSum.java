@@ -11,8 +11,7 @@ import java.util.Scanner;
 public class MatrixDiagonalSum {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter the N X N matrix value for N :-");
