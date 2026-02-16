@@ -27,6 +27,16 @@ Constraints:
 
 public class KthLargestElement {
 
+    /*
+        Explanations: 
+        1. We can use a min heap (priority queue) to keep track of the k largest elements in the array.
+        2. We iterate through the array and add each element to the min heap.
+        3. If the size of the min heap exceeds k, we remove the smallest element from the min heap.
+        4. After iterating through the array, the root of the min heap will be the kth largest element in the array.
+        5. Time Complexity: O(n log k) where n is the number of elements in the array and k is the size of the min heap, since we are adding and removing elements
+              from the min heap.
+        6. Space Complexity: O(k) since we are storing at most k elements in the min heap at any time.
+    */
     public int kthLargest(int[] nums, int k) {
         // Using a min heap to keep track of the k largest elements
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
@@ -42,7 +52,7 @@ public class KthLargestElement {
         return minHeap.poll(); // The root of the min heap will be the kth largest element
      
     }
-    
+
      public static void main(String[] args) {
          KthLargestElement obj = new KthLargestElement();
          int[] nums1 = {2,3,1,5,4};
