@@ -1,2 +1,24 @@
+# Eclipse
 /.metadata/
 /.recommenders/
+**/.project
+**/.classpath
+**/.settings/
+
+# Compiled class files — never commit binaries
+**/*.class
+**/bin/
+
+# IntelliJ IDEA
+.idea/
+**/*.iml
+
+# VS Code
+.vscode/
+
+# Gradle
+**/.gradle/
+**/build/
+
+# OS noise
+.DS_Store
