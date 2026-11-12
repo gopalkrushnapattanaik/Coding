@@ -10,11 +10,11 @@ https://medium.com/hackernoon/50-data-structure-and-algorithms-interview-questio
 
 https://www.educative.io/courses/visual-introduction-to-algorithms/
 
-https://www.educative.io/collection/page/5668639101419520/5633779737559040/5744017589403648
+https://www.designgurus.io/course/grokking-dynamic-programming
 
-https://www.educative.io/courses/grokking-the-coding-interview
+https://www.designgurus.io/course/grokking-the-coding-interview
 
-https://www.educative.io/courses/grokking-the-object-oriented-design-interview/
+https://www.designgurus.io/course/grokking-the-object-oriented-design-interview
 
 https://github.com/careercup/CtCI-6th-Edition/tree/master/Java
 
